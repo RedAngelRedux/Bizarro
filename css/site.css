@@ -3,6 +3,10 @@
     --secondary-color: #F16806;
     --dark-color: #292929;
     --white-color: #e7e7e7;
+    --superman-blue: #0060aa;
+    --superman-yellow: #ffed10;
+    --superman-red: #e20025;
+    --superman-black: #010101;
 }
 
 body {
@@ -87,7 +91,7 @@ footer .my-link>a:visited {
 }
 
 .checklist > li i {
-    color: var(--secondary-color);
+    color: var(--superman-red);
 }
 
 code[class*="language-"],
@@ -95,4 +99,16 @@ code[class*="language-"],
         white-space: pre-wrap;
         word-break: break-all;
         word-wrap: break-word;
+}
+
+.superman-blue {
+    color: var(--superman-blue);
+}
+
+div .superman-yellow > a:hover {
+    color: var(--superman-red);
+}
+
+div .superman-yellow .btn:hover {
+    background-color: var(--superman-yellow);
 }
