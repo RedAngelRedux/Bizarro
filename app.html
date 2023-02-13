@@ -61,8 +61,33 @@
 
     <!-- === MAIN SECTION === --> 
     <main class="flex-shrink-0">
-        <div class="container">
-            
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col">
+                    <h1 class="display-5 fw-bold lh-1 mb-3 superman-blue">BIZARRO:  A Coding Project</h1>
+                    <h4 class="lead mb-3">
+                        <span class="fw-bold">Objective:</span>&nbsp;Capture whatever a user types in, and with your code reverse what they've typed in, and then print or show it on the screen.
+                    </h4>
+                </div>
+                <idv class="col">
+                    <h5 class="border-1 border-bottom border-danger">Enter A String To Reverse</h5>
+                    <form class="row gx-3 gy-2">
+                        <div class="col">
+                            <input id="userString" type="text" class="form-control" placeholder="Enter a String" aria-label="Enter a String">
+                        </div>
+                        <div class="col-12">
+                            <button type="button" id="btnSubmit" class="btn btn-danger">Reverse Me</button>
+                        </div>
+                        <div class="alert alert-danger mt-5 invisible face show" id="alert" role="alert">
+                            <h4 class="alert-heading">Bizarro Says...</h4>
+                            <hr>
+                            <p class="mb-0" id="msg">
+                                <!-- === INSERT REVERSED STRING HERE === -->
+                            </p>
+                        </div>
+                    </form>
+                </idv>
+            </div>
         </div>
     </main>
 
